@@ -1,0 +1,34 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#F5F3FF"/>
+  <circle cx="120" cy="100" r="220" fill="#4F46E5" opacity="0.18"/>
+  <circle cx="1120" cy="620" r="260" fill="#14B8A6" opacity="0.20"/>
+  <rect x="70" y="44" width="1140" height="76" rx="28" fill="#FFFFFF" stroke="#000000" opacity="0.95"/>
+  <text x="112" y="92" font-family="Arial" font-size="30" font-weight="700" fill="#171717">🎬 КиноДневник</text>
+  <text x="760" y="88" font-family="Arial" font-size="18" font-weight="700" fill="#68636B">О проекте   Каталог   Отзывы   Контакты</text>
+  <text x="90" y="210" font-family="Arial" font-size="18" font-weight="700" fill="#4F46E5">ЛИЧНЫЙ КИНОСПИСОК</text>
+  <text x="90" y="282" font-family="Arial" font-size="56" font-weight="800" fill="#171717">Список фильмов, которые хоче</text>
+  <text x="90" y="346" font-family="Arial" font-size="56" font-weight="800" fill="#171717">тся не забыть</text>
+  <rect x="90" y="396" width="230" height="58" rx="29" fill="#4F46E5"/>
+  <text x="126" y="433" font-family="Arial" font-size="18" font-weight="700" fill="white">Смотреть список</text>
+  <rect x="790" y="170" width="350" height="410" rx="34" fill="#FFFFFF" stroke="#000000" opacity="0.96"/>
+  <rect x="820" y="205" width="290" height="270" rx="28" fill="url(#grad)"/>
+  <text x="850" y="438" font-family="Arial" font-size="34" font-weight="800" fill="white">Амели</text>
+  <text x="820" y="530" font-family="Arial" font-size="28" font-weight="800" fill="#171717">Амели</text>
+  <text x="820" y="562" font-family="Arial" font-size="18" fill="#68636B">Рекомендация дня</text>
+  <rect x="90" y="540" width="310" height="98" rx="24" fill="#FFFFFF" stroke="#000000" opacity="0.95"/>
+  <text x="120" y="580" font-family="Arial" font-size="22" font-weight="800" fill="#171717">Карточки фильмов</text>
+  <text x="120" y="613" font-family="Arial" font-size="17" fill="#68636B">CSS Grid + JavaScript</text>
+  <rect x="430" y="540" width="310" height="98" rx="24" fill="#FFFFFF" stroke="#000000" opacity="0.95"/>
+  <text x="460" y="580" font-family="Arial" font-size="22" font-weight="800" fill="#171717">Показать ещё</text>
+  <text x="460" y="613" font-family="Arial" font-size="17" fill="#68636B">Динамическая загрузка</text>
+  <rect x="770" y="540" width="310" height="98" rx="24" fill="#FFFFFF" stroke="#000000" opacity="0.95"/>
+  <text x="800" y="580" font-family="Arial" font-size="22" font-weight="800" fill="#171717">Тема + форма</text>
+  <text x="800" y="613" font-family="Arial" font-size="17" fill="#68636B">localStorage и валидация</text>
+  <defs>
+    <linearGradient id="grad" x1="820" y1="205" x2="1110" y2="475" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="0.45" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+</svg>

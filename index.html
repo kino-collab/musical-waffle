@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="КиноДневник — итоговый учебный лендинг по JavaScript с карточками фильмов, фильтрами, темой и формой." />
+  <title>КиноДневник — итоговая работа JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="На главную">
+        <span class="logo-mark">🎬</span>
+        <span>КиноДневник</span>
+      </a>
+
+      <nav class="nav" aria-label="Навигация по сайту">
+        <a href="#about">О проекте</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="theme-btn" id="themeBtn" type="button">🌙 Тема</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="label">личный киносписок</p>
+          <h1>Список фильмов, которые хочется не забыть</h1>
+          <p class="hero-text">Проект похож на личный дневник просмотров: карточки фильмов, жанры, рейтинг, тема и форма для заметок.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalog">Смотреть список</a>
+            <a class="btn btn-secondary" href="#contacts">Предложить фильм</a>
+          </div>
+        </div>
+
+        <aside class="hero-preview" aria-label="Рекомендованный фильм">
+          <p class="preview-label">Рекомендация дня</p>
+          <div class="big-poster">
+            <span>Амели</span>
+          </div>
+          <h2>Амели</h2>
+          <p>Сохраняйте идеи для будущих вечеров</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="label">Возможности</p>
+          <h2>Что есть в проекте</h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span>🎞️</span>
+            <h3>Карточки фильмов</h3>
+            <p>В каталоге есть название, жанр, год, рейтинг и короткое описание.</p>
+          </article>
+          <article class="feature-card">
+            <span>🧭</span>
+            <h3>Фильтры по жанрам</h3>
+            <p>Можно быстро оставить только нужный тип фильмов.</p>
+          </article>
+          <article class="feature-card">
+            <span>🌓</span>
+            <h3>Смена темы</h3>
+            <p>Светлая и тёмная тема сохраняются в браузере через localStorage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="label">Каталог</p>
+            <h2>Карточки фильмов</h2>
+          </div>
+          <p class="section-note">Карточки создаются через JavaScript. Кнопка «Показать ещё» добавляет новые элементы на страницу.</p>
+        </div>
+
+        <div class="filters" aria-label="Фильтр фильмов">
+          <button class="filter-btn active" type="button" data-filter="all">Все</button>
+          <button class="filter-btn" type="button" data-filter="Драма">Драма</button><button class="filter-btn" type="button" data-filter="Комедия">Комедия</button><button class="filter-btn" type="button" data-filter="Фантастика">Фантастика</button><button class="filter-btn" type="button" data-filter="Анимация">Анимация</button>
+        </div>
+
+        <div class="cards-grid" id="cardsGrid"></div>
+
+        <div class="center">
+          <button class="btn btn-primary" id="showMoreBtn" type="button">Показать ещё</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <p class="label">Отзывы</p>
+          <h2>Мнения зрителей</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Удобная подборка: сразу видно жанр и рейтинг, не нужно долго выбирать.»</p>
+            <strong>Марина</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Понравилась кнопка загрузки карточек и то, что сайт нормально выглядит с телефона.»</p>
+            <strong>Артём</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Хороший учебный проект: есть структура, фильтры, форма и тёмная тема.»</p>
+            <strong>София</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacts">
+      <div class="container contact-grid">
+        <div>
+          <p class="label">Обратная связь</p>
+          <h2>Предложите фильм для каталога</h2>
+          <p class="contact-text">Форма проверяет заполнение полей и корректность email. После отправки данные выводятся в console.log.</p>
+        </div>
+
+        <form class="feedback-form" id="feedbackForm" novalidate>
+          <label>
+            Имя
+            <input id="userName" name="name" type="text" placeholder="Ваше имя" required />
+            <span class="error" id="nameError"></span>
+          </label>
+
+          <label>
+            Email
+            <input id="userEmail" name="email" type="email" placeholder="name@example.com" required />
+            <span class="error" id="emailError"></span>
+          </label>
+
+          <label>
+            Сообщение
+            <textarea id="userMessage" name="message" rows="5" placeholder="Какой фильм добавить и почему?" required></textarea>
+            <span class="error" id="messageError"></span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Отправить</button>
+          <p class="success-message" id="successMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 КиноДневник. Итоговый проект по JavaScript.</p>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
